@@ -1,4 +1,9 @@
+data/
+outputs/
+*.nc
+*.h5
 __pycache__/
 *.pyc
 .env
-data/
+venv/
+*.egg-info/
