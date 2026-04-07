@@ -17,9 +17,20 @@ def process():
     try:
         result = run_pipeline(filename)
 
+        # ✅ Convert numpy types → Python types
+        clean_result = {}
+        if isinstance(result, dict):
+            for k, v in result.items():
+                try:
+                    clean_result[k] = float(v)
+                except:
+                    clean_result[k] = v
+        else:
+            clean_result = float(result)
+
         return jsonify({
             "status": "completed",
-            "result": result
+            "result": clean_result
         })
 
     except Exception as e:
