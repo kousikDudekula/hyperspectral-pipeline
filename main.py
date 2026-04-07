@@ -11,7 +11,7 @@ import boto3
 import datetime
 
 
-BUCKET_NAME = "hyperspectral-data"
+BUCKET_NAME = "hyperspectral-data-koushik"
 
 
 # 🔹 Download from S3 (dynamic)
