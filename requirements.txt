@@ -1,0 +1,8 @@
+numpy
+matplotlib
+scipy
+scikit-learn
+netCDF4
+flask
+boto3
+requests
